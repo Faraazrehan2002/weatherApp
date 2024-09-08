@@ -19,6 +19,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            
+            HStack {
+                Spacer()
+                Button(action: {}, label: {
+                    Text("\(Image(systemName: "pencil"))Edit")
+                        .font(.largeTitle)
+                        .bold()
+                })
+            }
+            
             Spacer()
             
             Text(seasons[seasonIdx])
