@@ -31,7 +31,8 @@ struct EditSeasonView: View {
             
             Button(action: {
                 if(seasonName.isEmpty){
-                    print("Cannot be empty")
+                    showEmptyAlert = true
+                    
                 }
                 else{
                     onSave()
@@ -39,8 +40,11 @@ struct EditSeasonView: View {
                 }
             }, label: {
                 Text("Done")
+                    .padding()
             })
-        }.padding()
+        }.alert(isPresented: $showEmptyAlert){
+            Alert(title: Text("OOPS"), message: Text("Cannot be empty"), dismissButton: .default(Text("Okay")))
+        }
         
         VStack{
             Text("Update Season Name")
