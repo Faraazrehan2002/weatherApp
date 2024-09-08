@@ -35,7 +35,9 @@ struct ContentView: View {
                         .bold()
                 })
                 .sheet(isPresented: $isNameEditSheetPresented){
-                    EditSeasonView()
+                    EditSeasonView(seasonName: $seasonToEdit, onSave: {
+                        updateNameOnSave()
+                    })
                 }
             }
             
@@ -89,6 +91,14 @@ struct ContentView: View {
         return buttons
     }
     
+    
+    func updateNameOnSave(){
+        
+        if let index = seasons.firstIndex(of: seasons[seasonIdx]){
+            seasons[index] = seasonToEdit
+        }
+        
+    }
     
 }
 
