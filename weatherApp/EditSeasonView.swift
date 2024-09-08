@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EditSeasonView: View {
+    
+    
     var body: some View {
         
         HStack {
@@ -37,5 +39,5 @@ struct EditSeasonView: View {
 }
 
 #Preview {
-    EditSeasonView()
+        EditSeasonView()
 }

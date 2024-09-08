@@ -15,18 +15,28 @@ struct ContentView: View {
     
     @State private var seasonIdx = 0
     
+    @State private var isNameEditSheetPresented: Bool = false
+    
     @State private var showingActionSheet = false
+    
+    @State private var seasonToEdit: String = ""
     
     var body: some View {
         VStack {
             
             HStack {
                 Spacer()
-                Button(action: {}, label: {
+                Button(action: {
+                    seasonToEdit = seasons[seasonIdx]
+                    isNameEditSheetPresented = true
+                }, label: {
                     Text("\(Image(systemName: "pencil"))Edit")
                         .font(.largeTitle)
                         .bold()
                 })
+                .sheet(isPresented: $isNameEditSheetPresented){
+                    EditSeasonView()
+                }
             }
             
             Spacer()
