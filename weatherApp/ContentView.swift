@@ -31,15 +31,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Text(seasons[seasonIdx])
-                .font(.largeTitle)
-//                    .bold()
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            
-            Image("weather_\(seasonIdx + 1)")
-                .resizable()
-                .frame(width: 300, height: 300)
-            Spacer()
+            SeasonView(seasons: seasons, seasonIdx: seasonIdx)
             
             Button(action: {
                 showNextSeasonWeather()

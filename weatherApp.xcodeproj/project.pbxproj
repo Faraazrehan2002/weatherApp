@@ -11,6 +11,7 @@
 		E8646C272C8CDCEA002FE54F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8646C262C8CDCEA002FE54F /* ContentView.swift */; };
 		E8646C292C8CDCEC002FE54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8646C282C8CDCEC002FE54F /* Assets.xcassets */; };
 		E8646C2C2C8CDCEC002FE54F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8646C2B2C8CDCEC002FE54F /* Preview Assets.xcassets */; };
+		E8646C332C8E1266002FE54F /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8646C322C8E1266002FE54F /* SeasonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E8646C262C8CDCEA002FE54F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8646C282C8CDCEC002FE54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8646C2B2C8CDCEC002FE54F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8646C322C8E1266002FE54F /* SeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				E8646C242C8CDCEA002FE54F /* weatherAppApp.swift */,
 				E8646C262C8CDCEA002FE54F /* ContentView.swift */,
+				E8646C322C8E1266002FE54F /* SeasonView.swift */,
 				E8646C282C8CDCEC002FE54F /* Assets.xcassets */,
 				E8646C2A2C8CDCEC002FE54F /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8646C332C8E1266002FE54F /* SeasonView.swift in Sources */,
 				E8646C272C8CDCEA002FE54F /* ContentView.swift in Sources */,
 				E8646C252C8CDCEA002FE54F /* weatherAppApp.swift in Sources */,
 			);
